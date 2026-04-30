@@ -1,0 +1,130 @@
+:root {
+    --primary: #004a99;
+    --accent: #00d4ff;
+    --text: #2d3436;
+    --bg: #f9f9f9;
+    --white: #ffffff;
+    --shadow: 0 10px 30px rgba(0,0,0,0.1);
+    --base-font-size: 16px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: var(--base-font-size);
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Acessibilidade */
+.accessibility-bar {
+    background: #222;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.accessibility-bar button {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Design Clean & Bold */
+.hero {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    padding: clamp(60px, 10vh, 100px) 0;
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 60px 0 40px;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    color: var(--primary);
+}
+
+/* Linha do Tempo */
+.timeline-item {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+    border-left: 8px solid var(--accent);
+}
+
+.timeline-year {
+    font-weight: 800;
+    color: var(--primary);
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Acordeão */
+.accordion-item {
+    margin-bottom: 15px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.accordion-header {
+    background: var(--primary);
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-content {
+    background: white;
+    padding: 20px;
+    display: none;
+}
+
+/* Blindagem de Contraste */
+body.high-contrast, body.high-contrast *:not(i):not(.icon) {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #ff0 !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+body.high-contrast a, body.high-contrast button {
+    color: #ff0 !important;
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}

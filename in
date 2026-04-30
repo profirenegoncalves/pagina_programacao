@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História da Programação: Brasil e Paraná</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="accessibility-bar">
+        <div class="container">
+            <span>Acessibilidade:</span>
+            <button onclick="alterarFonte(1)" aria-label="Aumentar fonte">A+</button>
+            <button onclick="alterarFonte(-1)" aria-label="Diminuir fonte">A-</button>
+            <button onclick="toggleContraste()" aria-label="Alto Contraste"><i class="fas fa-adjust"></i></button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>A Evolução do Pensamento Computacional</h1>
+            <p>Do primeiro computador nacional à vanguarda da Educação Digital nas escolas do Paraná.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Memória e Tecnologia</h2>
+            <p>A trajetória da programação no Brasil e no Paraná reflete um esforço contínuo de soberania tecnológica e democratização do conhecimento digital.</p>
+        </section>
+
+        <section class="timeline-section">
+            <h2 class="section-title">Linha do Tempo Estratégica</h2>
+            <div id="timeline-container"></div>
+        </section>
+
+        <section class="docs-section">
+            <h2 class="section-title">Marcos Regulatórios e Documentos</h2>
+            <div id="accordion-docs"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Núcleo Regional de Educação - Especialista em Educação Digital.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
